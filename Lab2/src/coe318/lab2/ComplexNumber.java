@@ -99,6 +99,7 @@ private double imaginary;
      * @return 1.0 / this
      */
     public ComplexNumber reciprocal() {
+        //https://www.cuemath.com/numbers/complex-numbers/
         double denominator = (this.real * this.real) + (this.imaginary * this.imaginary);
         return new ComplexNumber((real/denominator), (-imaginary/denominator));	//A stub: to be fixed
     }
