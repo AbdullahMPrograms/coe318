@@ -2,7 +2,7 @@
  *
  * @author Abdullah Malik
  */
-//package coe318.lab3;
+package coe318.lab3;
 public class Counter {
     //Instance variables here
     private int modulus;
