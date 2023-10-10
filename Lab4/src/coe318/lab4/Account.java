@@ -1,8 +1,9 @@
+package lab4;
 /**
  *
  * @author Abdullah Malik
  */
-package coe318.lab4;
+// package coe318.lab3;
 public class Account {
 
     private String name;
