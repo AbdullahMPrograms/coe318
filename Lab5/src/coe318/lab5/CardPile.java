@@ -1,11 +1,10 @@
-
 /**
  *
- * @author 
+ * @author Abdullah Malik
  */
 
 import java.util.ArrayList;
-
+import java.util.Random;
 /**
  * A pile of cards.
  *
@@ -16,22 +15,29 @@ public class CardPile {
 
     public CardPile() {
         //Initialize the instance variable.
-
+        cards = new ArrayList<Card>();
     }
     /**
      * Add a card to the pile.
+     * add obj to array
      * @param card
      */
     public void add(Card card) {
-        //FIX THIS
+        cards.add(card);
     }
 
     /**
      * Remove a card chosen at random from the pile.
+     * import random
      * @return
      */
     public Card removeRandom() {
-        return null; //FIX THIS
+        if(cards.isEmpty()) {
+            return null;
+        }
+        Random random = new Random();
+        int i = random.nextInt(cards.size());
+        return cards.remove(i);
     }
 
     /**
@@ -41,8 +47,11 @@ public class CardPile {
      */
     @Override
     public String toString() {
-        //FIX THIS
-        return "";
+        String result = "";
+        for(Card card : cards) {
+            result += card.toString() + " ";
+        }
+        return result.trim();   // Trim to remove trailing space
     }
     
     /**

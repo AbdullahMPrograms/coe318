@@ -1,4 +1,4 @@
-package coe318.lab5;
+//package coe318.lab5;
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -72,8 +72,20 @@ public class BlackjackGame {
    * @return the score
    */
   public int score(CardPile p) {
-    //FIX THIS
-    return 0;
+    int score = 0;
+
+    for (Card card : p.getCards()) {
+      // Ace = 1
+      if (card.getRank() == 14) {
+        score += 1;
+      } else if (card.getRank() >= 11 && card.getRank() <= 13) {
+        //Jack king queen = 10
+        score += 10;
+      } else {
+        score += card.getRank();
+      }
+    }
+    return score;
   }
 
   /**
