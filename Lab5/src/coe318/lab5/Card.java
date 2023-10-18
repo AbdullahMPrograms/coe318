@@ -40,7 +40,7 @@ public class Card implements Comparable {
    * @param faceUp the faceUp to set
    */
   public void setFaceUp(boolean faceUp) {
-    this.faceUp = true;
+    this.faceUp = faceUp;
   }
 
   /**
