@@ -46,7 +46,8 @@ public class SimpleUI implements UserInterface {
 
     if (yourScore > 21 || (houseScore == yourScore)) {
       System.out.println("House wins!");
-    } else if (houseScore > 21 || yourScore > houseScore) {
+    //} else if (houseScore > 21 || yourScore > houseScore) {
+    } else {
       System.out.println("You win!");
     }
   }
