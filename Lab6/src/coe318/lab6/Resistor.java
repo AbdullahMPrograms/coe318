@@ -1,5 +1,3 @@
-package src.coe318.lab6;
-
 public class Resistor {
     
     private double resistance;
@@ -29,6 +27,6 @@ public class Resistor {
 
     @Override
     public String toString() {
-        return "R" + id + " " + node1 + " " + node2 + resistance;
+        return "R" + id + " " + node1 + " " + node2 + " " + resistance;
     }
 }
