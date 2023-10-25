@@ -1,3 +1,5 @@
+package coe318.lab6;
+
 public class Resistor {
     
     private double resistance;
