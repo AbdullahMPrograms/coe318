@@ -1,4 +1,4 @@
-//package coe318.lab7;
+package coe318.lab7;
 
 /**
  *
@@ -15,13 +15,22 @@ public class Circuit {
         voltageSources = new ArrayList<>();
     }
 
-    public void addResistor(Resistor resistor) {
-        resistors.add(resistor);
-    }
+   public void addResistor(Resistor resistor) {
+       resistors.add(resistor);
+   }
 
-    public void addVoltageSource(VoltageSource voltageSource) {
-        voltageSources.add(voltageSource);
-    }
+   public void addVoltageSource(VoltageSource voltageSource) {
+       voltageSources.add(voltageSource);
+   }
+
+   //FOR JUNIT TESTING
+   public ArrayList<Resistor> getResistors() {
+       return resistors;
+   }
+
+   public ArrayList<VoltageSource> getVoltageSources() {
+       return voltageSources;
+   }
 
     public void printSpice() {
         int rCount = 1, vCount = 1;
