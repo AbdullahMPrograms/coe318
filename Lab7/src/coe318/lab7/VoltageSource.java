@@ -16,6 +16,11 @@ public class VoltageSource {
 
     @Override
     public String toString() {
-        return positiveNode + " " + negativeNode + " DC " + voltage;
+        if(positiveNode > negativeNode) {
+            return negativeNode + " " + positiveNode + " DC -" + voltage;
+        } else {
+            return positiveNode + " " + negativeNode + " DC " + voltage;
+        }
+        
     }
 }
